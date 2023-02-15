@@ -1,0 +1,227 @@
+/* 
+
+Rua General Câmara, 1136 - Sala 1 - Centro
+Santa Barbara D'Oeste - SP
+CEP: 13.450-029
+
+Telefone: (19)3455-2062
+
+mitutools@mitutools.com.br
+vendas@mitutools.com.br
+
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 20px;
+}
+
+*, html {
+    scroll-behavior: smooth !important;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+
+.body{
+    background-image: url(img/background.jpg) !important;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+
+/* BANNER */
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    min-width: 100vh;
+
+}
+
+.nav a, li{
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    text-decoration: none;    
+    letter-spacing: 10px;
+    font-size: 20px;
+    color: #fff;
+    width: 100%;
+    margin-right: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.nav{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    animation: fadeIn 3s;
+}
+
+.logo{
+    width: 230px;
+    cursor: pointer;
+}
+
+/* CONTEÚDO */
+
+.content{
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 3s;
+
+}
+
+.txtcontainer
+{
+    display: inline-flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.txtcontainer .txtstatic h1{
+    padding-left: 100px;
+}
+
+.txtcontainer .txtdinamico{
+    top: 0%;
+}
+
+.txtdinamico h1{
+    color: white;
+    list-style: none;
+    font-size: 35px;
+    font-weight: 500;
+    margin-right: 100px;
+}
+
+.txtdinamico h1 span::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border-left: 2px solid white;
+    animation: typing 1.5s steps(10) infinite;
+    background-color: #011b2c;
+}
+
+.txtdinamico h1 span{
+    position: relative;
+}
+
+@keyframes typing{
+    100%{
+        left:100%;
+        margin: 0 -35 0 35;
+    }
+}
+
+.iconseta{
+    margin-top:22%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65px;
+    height: 65px;
+    justify-content:center;    
+    display: flex;
+}
+
+/* CONTATO */
+
+#sec2{
+    background-color:#334a59;
+    min-width: 100vh;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width:100%;
+    height:100%;
+    min-width: 100vh;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+
+.box{
+    border-radius: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 7px 7px 29px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 7px 29px -3px rgba(0,0,0,0.75);
+    box-shadow: 7px 7px 29px -3px rgba(0,0,0,0.75);
+    padding: 2rem 2rem;
+    margin: 1rem;
+    background-color:#99a5ac;
+    text-align: center;
+}
+
+@media only screen and (min-device-width: 480px){
+    .info{
+        flex-direction: row;
+    }
+}
+
+.box span{
+    color: black;
+}
+
+.box h3, span{
+    margin-bottom: 5px;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+.box .icon .imgicon {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    width: 70px;
+    height: 70px;
+    -webkit-box-shadow: 7px 7px 29px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 7px 29px -3px rgba(0,0,0,0.75);
+    box-shadow: 7px 7px 29px -3px rgba(0,0,0,0.75);
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 0px solid #000000;
+    align-items: center;
+    display: flex;
+    margin-bottom: 10px;
+    background-color:#99a5ac;
+
+}
+
+@keyframes fadeIn{
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
