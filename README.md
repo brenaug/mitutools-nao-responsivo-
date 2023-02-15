@@ -1,1 +1,0 @@
-# mitutools-nao-responsivo-
